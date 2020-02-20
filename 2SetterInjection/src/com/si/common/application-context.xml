@@ -2,10 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="sony" class="com.si.beans.SonyChannelImpl">
-</bean>
+	
+	<bean id="sony" class="com.si.beans.SonyChannelImpl">
+		<property name="channelNumber" value="21"/>
+	</bean>
 
-<bean id="zee" class="com.si.beans.ZeeChannelImpl">
-</bean>
+	<bean id="zee" class="com.si.beans.ZeeChannelImpl">
+		<property name="channelNumber" value="23"/>
+	</bean>
 
 </beans>
