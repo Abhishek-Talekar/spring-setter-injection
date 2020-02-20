@@ -6,7 +6,7 @@ public class ZeeChannelImpl implements Channel {
 
 	@Override
 	public void tuneChannel() {
-		System.out.println("You are watching Sony TV..\nChannel Number:" + channelNumber);
+		System.out.println("You are watching Zee TV..\nChannel Number:" + channelNumber);
 	}
 
 	public void setChannelNumber(int channelNumber) {

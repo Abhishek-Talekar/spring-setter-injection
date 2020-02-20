@@ -10,11 +10,10 @@ import com.si.beans.Television;
 
 public class SITest {
 	public static void main(String[] args) {
-		Channel channel;
-		Television television = null;
+		Channel channel = null;
 		BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("com/si/common/application-context.xml"));
-		channel = beanFactory.getBean("sony",SonyChannelImpl.class);
-		television.watchTv();
+		Television television = beanFactory.getBean("tv",Television.class);
 		
+		television.watchTv();
 	}
 }

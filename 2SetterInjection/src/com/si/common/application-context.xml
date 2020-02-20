@@ -3,6 +3,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
+	<bean id="tv" class="com.si.beans.Television">
+		<property name="channel" ref="zee"/>
+	</bean>
+	
 	<bean id="sony" class="com.si.beans.SonyChannelImpl">
 		<property name="channelNumber" value="21"/>
 	</bean>
@@ -11,4 +15,5 @@
 		<property name="channelNumber" value="23"/>
 	</bean>
 
+	
 </beans>
